@@ -5,7 +5,9 @@ import Signin from './Signin';
 import Signup from './Signup';
 import ProtectedRoute from './ProtecterRoute';
 import { SignedIn, SignedOut } from '@clerk/clerk-react';
-import Content from '../code/Content';
+import CandidateForm from '../code/CandidateForm';
+import NotFound from '../code/NotFound';
+
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Routes>
         {/* Redirect root route based on Clerk auth */}
         <Route path="/" element={<Homepage/>} />
+        <Route path="/about" element={<NotFound/>} />
+
         <Route
           path="/"
           element={
@@ -32,7 +36,7 @@ const App = () => {
           path="/content"
           element={
             <ProtectedRoute>
-            <Content/> 
+          <CandidateForm/>
             </ProtectedRoute>
           }
         />

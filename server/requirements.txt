@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+python-dotenv
+supabase
+twilio
+requests
+beautifulsoup4
+selenium
+webdriver-manager
