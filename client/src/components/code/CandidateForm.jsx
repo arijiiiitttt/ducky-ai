@@ -710,7 +710,7 @@ const CandidateForm = () => {
             
             console.log('Submitting form data:', formData);
             
-            const response = await fetch('http://127.0.0.1:3001/api/submit-profile', {
+            const response = await fetch('https://ducky-ai-b2et.onrender.com/api/submit-profile', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
